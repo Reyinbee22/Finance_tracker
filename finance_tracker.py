@@ -146,6 +146,7 @@ filter_menu = tk.OptionMenu(filter_frame, filter_var, "All")
 filter_menu.grid(row=0, column=1, padx=5)
 tk.Button(filter_frame, text="Apply Filter", command=filter_transactions, bg="#3498DB", fg="white").grid(row=0, column=2, padx=5)
 
+# Summary Labels
 summary_frame = tk.Frame(frame, bg="#34495E")
 summary_frame.pack(pady=5)
 
@@ -158,4 +159,5 @@ expense_label.pack(fill="x", padx=10)
 balance_label = tk.Label(summary_frame, text="Balance: ₦0", fg="white", bg="#F1C40F", font=("Arial", 10, "bold"), pady=2)
 balance_label.pack(fill="x", padx=10)
 
+# Run the app
 root.mainloop()
